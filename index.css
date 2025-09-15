@@ -41,7 +41,7 @@ body{
 .navbar .contact{
   background-color: white;
   color:#f08e80;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   
 }
 
@@ -167,5 +167,44 @@ footer img:first-child{
 
 .footer-content{
   text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+  .hero-content,
+  .blog-content,
+  .events-content{
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .hero-content .two-column-section p:first-child{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  .hero-content .tagline{
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  .two-column-section > p,
+  .two-column-section .skills,
+  .two-column-section .blog-posts{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .hero-content .tagline{
+    font-size: 2.5rem;
+  }
+
+  .hero .navbar .links {
+    display: none;
+  }
+
+  .hero .navbar p{
+    font-size: 1.5rem;
+  }
 }
 
